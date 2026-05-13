@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Practice</title>
+
+    <!-- CSS -->
+    <style>
+        .container {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .box {
+            width: 300px
+            height: 200px;
+            background: lightblue;
+            margin: center;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Website</h1>
+
+        <div class="box">
+            <p id="text">Click the button</p>
+            <button onclick="changeText()">Click Me</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Text Changed"
+        }
+
+        function addNumbers(a, b) {
+            return a + b
+        }
+
+        console.log(addNumbers(5))
+    </script>
+
+</body>
+</html>
